@@ -6,7 +6,7 @@ FILES='Flat-frames_resized-bathroom2study.zip Flat-frames_resized-kitchen2study.
 
 for f in $FILES
 do
-	if [ ! -f "$f" ]
+	if [ ! -f "zips/$f" ]
 	then
 		echo "Downloading $f..."
 		curl -L "http://www.robots.ox.ac.uk/~tvg/projects/CollaborativeSLAM/data/$f" > "zips/$f"
