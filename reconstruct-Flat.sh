@@ -1,10 +1,10 @@
 #! /bin/bash -e
 
-# The location of spaintgui can be specified as the first parameter of the script.
-spaintgui=${1:-/c/spaint/build/bin/apps/spaintgui/spaintgui}
+# The frames subdirectory can be specified as the first parameter of the script.
+dir=${1:-frames_resized}
 
-# The frames subdirectory can be specified as the second parameter of the script.
-dir=${2:-frames_resized}
+# The location of spaintgui can be specified as the second parameter of the script.
+spaintgui=${2:-/c/spaint/build/bin/apps/spaintgui/spaintgui}
 
 cd Flat
 
