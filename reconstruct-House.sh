@@ -3,4 +3,9 @@
 # The location of spaintgui can be specified as the first parameter of the script.
 spaintgui=${1:-/c/spaint/build/bin/apps/spaintgui/spaintgui}
 
-$spaintgui --relocaliserType=none --subwindowConfigurationIndex=3 -g House/global_poses.txt -s House/frames_resized/frontroom2study -t Disk -s House/frames_resized/hall2frontbedroom -t Disk -s House/frames_resized/hall2oldkitchen -t Disk -s House/frames_resized/mainbedroom2studio -t Disk -s House/frames_resized/diningroom2kitchen -t Disk
+# The frames subdirectory can be specified as the second parameter of the script.
+dir=${2:-frames_resized}
+
+cd House
+
+$spaintgui --relocaliserType=none --subwindowConfigurationIndex=3 -g global_poses.txt -s $dir/frontroom2study -t Disk -s $dir/hall2frontbedroom -t Disk -s $dir/hall2oldkitchen -t Disk -s $dir/mainbedroom2studio -t Disk -s $dir/diningroom2kitchen -t Disk
