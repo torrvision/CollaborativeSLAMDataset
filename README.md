@@ -28,9 +28,9 @@ year = {2018}
 
 ## 1. Downloading the Dataset
 
-1. Choose a directory for the dataset, hereafter referred to as &lt;dir&gt;.
+1. Choose a directory for the dataset, hereafter referred to as `<dir>`.
 
-2. Clone the CollaborativeSLAMDataset repository into &lt;dir&gt;.
+2. Clone the CollaborativeSLAMDataset repository into `<dir>`.
 
 3. Change to the dataset directory:
 
