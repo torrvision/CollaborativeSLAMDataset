@@ -18,11 +18,20 @@ dir=${2:-frames_resized}
 # The location of spaintgui can be specified as the third parameter of the script.
 spaintgui=${3:-/c/spaint/build/bin/apps/spaintgui/spaintgui}
 
+# Change to the subset directory.
 cd $1
+
+# Determine which sequences to use, and in what order.
+if [ -f global_sequences.txt ]
+then
+  sequences=`cat global_sequences.txt`
+else
+  sequences=`ls $dir`
+fi
 
 args="--relocaliserType=none --subwindowConfigurationIndex=3 -g global_poses.txt "
 
-for f in $(ls $dir)
+for f in $sequences
 do
   echo $f
   args="$args -s $dir/$f -t Disk "
