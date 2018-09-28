@@ -64,7 +64,15 @@ year = {2018}
 
 ## 3. Running Collaborative Reconstructions
 
-TODO
+1. Install SemanticPaint by following the instructions at [https://github.com/torrvision/spaint].
+
+2. Run the collaborative reconstruction script, specifying the necessary parameters, e.g.
+
+   ```
+   $ ./reconstruct-collaborative.sh Flat frames_resized /c/spaint/build/bin/apps/spaintgui/spaintgui
+   ```
+
+   Note that the second and third parameters default to frames_resized and /c/spaint/build/bin/apps/spaintgui/spaintgui, respectively.
 
 # Licence
 
