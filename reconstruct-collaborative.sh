@@ -33,6 +33,11 @@ fi
 # Construct the command line.
 args="--pipelineType=collaborative --subwindowConfigurationIndex=7 "
 
+if [ -f collaborative_config.ini ]
+then
+  args="$args -f collaborative_config.ini "
+fi
+
 for f in $sequences
 do
   echo $f

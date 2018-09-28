@@ -33,6 +33,11 @@ fi
 # Construct the command line.
 args="--relocaliserType=none --subwindowConfigurationIndex=3 -g global_poses.txt "
 
+if [ -f global_config.ini ]
+then
+  args="$args -f global_config.ini "
+fi
+
 for f in $sequences
 do
   echo $f
