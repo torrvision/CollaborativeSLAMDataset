@@ -60,7 +60,7 @@ year = {2018}
    $ ./reconstruct-global.sh Flat frames_resized /c/spaint/build/bin/apps/spaintgui/spaintgui
    ```
 
-   Note that the second and third parameters default to frames_resized and /c/spaint/build/bin/apps/spaintgui/spaintgui, respectively.
+   Note that the second and third parameters default to `frames_resized` and `/c/spaint/build/bin/apps/spaintgui/spaintgui`, respectively.
 
 ## 3. Running Collaborative Reconstructions
 
@@ -72,7 +72,7 @@ year = {2018}
    $ ./reconstruct-collaborative.sh Flat frames_resized /c/spaint/build/bin/apps/spaintgui/spaintgui
    ```
 
-   Note that the second and third parameters default to frames_resized and /c/spaint/build/bin/apps/spaintgui/spaintgui, respectively.
+   Note that the second and third parameters default to `frames_resized` and `/c/spaint/build/bin/apps/spaintgui/spaintgui`, respectively.
 
 # Licence
 
