@@ -10,6 +10,7 @@ fi
 if [ ! -d $1 ]
 then
   echo "Error: The subset '$1' does not exist"
+  exit
 fi
 
 # The frames subdirectory can be specified as the second parameter of the script.
@@ -29,6 +30,7 @@ else
   sequences=`ls $dir`
 fi
 
+# Construct the command line.
 args="--relocaliserType=none --subwindowConfigurationIndex=3 -g global_poses.txt "
 
 for f in $sequences
@@ -37,4 +39,5 @@ do
   args="$args -s $dir/$f -t Disk "
 done
 
+# Run the application.
 $spaintgui $args
