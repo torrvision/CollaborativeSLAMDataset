@@ -74,6 +74,10 @@ year = {2018}
 
    Note that the second and third parameters default to `frames_resized` and `/c/spaint/build/bin/apps/spaintgui/spaintgui`, respectively.
 
+# Hints and Tips
+
+* You can generate a single sequence of posed RGB-D frames for each subset of the dataset by running the `reconstruct-global.sh` script and saving the sequence to disk in `spaintgui`.
+
 # Licence
 
 This dataset is licensed under a CC-BY-SA licence. See [https://creativecommons.org/licenses/by-sa/4.0/legalcode] for the full legal text.
