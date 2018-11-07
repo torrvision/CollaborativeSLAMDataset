@@ -31,7 +31,7 @@ else
 fi
 
 # Construct the command line.
-args="--relocaliserType=none --subwindowConfigurationIndex=3 -g global_poses.txt "
+args="--pipelineType=slam --relocaliserType=none --subwindowConfigurationIndex=3 -g global_poses.txt "
 
 if [ -f global_config.ini ]
 then
