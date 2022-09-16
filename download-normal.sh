@@ -9,7 +9,7 @@ do
 	if [ ! -f "zips/$f" ]
 	then
 		echo "Downloading $f..."
-		curl -L "http://www.robots.ox.ac.uk/~tvg/projects/CollaborativeSLAM/data/$f" > "zips/$f"
+		curl -L "https://tvg-collaborativeslam.s3.eu-west-1.amazonaws.com/$f" > "zips/$f"
 
 		echo "Unzipping $f..."
 		unzip -qq "zips/$f"
